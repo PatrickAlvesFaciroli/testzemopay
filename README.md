@@ -6,19 +6,19 @@ Este repositório é utilizado para aplicação de testes em candidatos a vaga d
 
   O teste conta com 3 níveis:
   
-  -> Básico
-  -> Médio
-  -> Avançado
+    -> Básico
+    -> Médio
+    -> Avançado
 
 ```
 
 #### Para o teste básico
   
-  -> Resolver os problemas dispostos;
+      1. Resolver os problemas dispostos;
   
-  -> Implementar uma funcionalidade;
+      2. Implementar/Construir uma funcionalidade baseado na seguinte tela;
   
-  -> Utilizar uma API para requisições;
+      3. Utilizar uma API para requisições;
   
 #### Para o teste médio
 
@@ -28,7 +28,7 @@ Este repositório é utilizado para aplicação de testes em candidatos a vaga d
     
   ```
   
-  #### Para o teste avançado
+#### Para o teste avançado
 
   ```
     
