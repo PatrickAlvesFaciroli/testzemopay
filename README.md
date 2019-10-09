@@ -36,13 +36,11 @@ Este repositório é utilizado para aplicação de testes em candidatos a vaga d
       
   [RANDOM USER GENERATOR](https://randomuser.me/)
  
-      3. Contruir uma página utilizando a API anterior:
+      3. Construir uma página utilizando a API anterior:
       
           Necessário criar um input com quantidade de usuários que retornará no JSON, fazer uma listagem abaixo e criar uma ação (modal por exemplo) que exibirá outras informações além do nome em uma segunda página de detalhamento. Na ação a criatividade será avaliada.
       
           * Um plus seria construir em ReactJS, mas pode ser feito com HTML e CSS.
-        
-          
   
 #### Para o teste médio
 
