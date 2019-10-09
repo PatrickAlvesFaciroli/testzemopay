@@ -12,7 +12,7 @@ Este repositório é utilizado para aplicação de testes em candidatos a vaga d
 
 #### Para o teste
   
-      1. Trazer como resultado das tabelas tabelas o NOME COMPLETO e o NÚMERO DE TELEFONE
+      1. Trazer como resultado das tabelas o NOME COMPLETO e o NÚMERO DE TELEFONE.
 
 |id|full_name|age|
 |--|---------|---|
@@ -36,6 +36,6 @@ Este repositório é utilizado para aplicação de testes em candidatos a vaga d
  
       3. Construir uma página utilizando a API anterior:
       
-          Necessário criar um input com quantidade de usuários que retornará no JSON, fazer uma listagem abaixo e criar uma ação (modal por exemplo) que exibirá outras informações além do nome em uma segunda página de detalhamento. Na ação a criatividade será avaliada.
+          Necessário criar um input com quantidade de usuários que retornará no JSON, fazer uma listagem abaixo e criar uma ação (modal por exemplo) que exibirá outras informações, além do nome em uma segunda página de detalhamento. Na ação a criatividade será avaliada.
       
           * Um plus seria construir em ReactJS, mas pode ser feito com HTML e CSS.
