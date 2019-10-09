@@ -16,7 +16,7 @@ Este repositório é utilizado para aplicação de testes em candidatos a vaga d
   
       1. Resolver os problemas dispostos;
       
-        1.1 Fazer um CRUD
+        1.1 Na tabela
   
       2. Contruir uma página baseado na seguinte tela:
       
