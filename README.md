@@ -2,6 +2,14 @@
 
 Este repositório é utilizado para aplicação de testes em candidatos a vaga de programador.
 
+  ```
+    Passo a passo:
+    
+      git clone    
+      crie uma branch no seguinte formato nome-sobrenome
+      git push
+  ```
+
 #### Para o teste básico
   
       1. Trazer como resultado das tabelas tabelas o NOME COMPLETO e o NÚMERO DE TELEFONE
