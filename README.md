@@ -16,7 +16,14 @@ Este repositório é utilizado para aplicação de testes em candidatos a vaga d
   
       1. Resolver os problemas dispostos;
       
-        1.1 Na tabela
+        1.1 Trazer como resultado das tabelas tabelas o NOME COMPLETO e o NÚMERO DE TELEFONE
+        
+        |id|full_name|age|
+        |--|---------|---|
+        |1|Joice Figueiredo|19|
+        |2|Thor Antunes|45|
+        |3|Eide Batista|32|
+        |4|Rodrigo Dantas|25|
   
       2. Contruir uma página baseado na seguinte tela:
       
