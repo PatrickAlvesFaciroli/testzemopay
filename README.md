@@ -25,9 +25,9 @@ Este repositório é utilizado para aplicação de testes em candidatos a vaga d
       3. Utilizar uma API para requisições;
       
 
-|id|full_name|age|
-|--|---------|---|
-|1|Joice Figueiredo|19|
+|id|full_name|age|               |id_user|number_phone|
+|--|---------|---|               |-------|------------|
+|1|Joice Figueiredo|19|          |1|(16) 977224566|
 |2|Thor Antunes|45|
 |3|Eide Batista|32|
 |4|Rodrigo Dantas|25|
