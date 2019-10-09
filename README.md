@@ -37,6 +37,8 @@ Este repositório é utilizado para aplicação de testes em candidatos a vaga d
 ![Screen Shot 2019-10-09 at 12 56 12 PM](https://user-images.githubusercontent.com/53064911/66498842-21d2ca80-ea95-11e9-859a-6725695739c0.png)
 
       3. Utilizar uma API para requisições;
+        
+         * Necessário criar um input com quantidade de usuários que retornará no JSON, fazer uma listagem e criar uma ação (modal por exemplo) que exibirá outras informações além do nome. Na ação a criatividade será avaliada.
       
  [RANDOM USER GENERATOR](https://randomuser.me/)
   
