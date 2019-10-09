@@ -16,7 +16,11 @@ Este repositório é utilizado para aplicação de testes em candidatos a vaga d
   
       1. Resolver os problemas dispostos;
   
-      2. Implementar/Construir uma funcionalidade baseado na seguinte tela;
+      2. Contruir uma página baseado na seguinte tela:
+      
+      ![Screen Shot 2019-10-09 at 12 56 12 PM](https://user-images.githubusercontent.com/53064911/66498842-21d2ca80-ea95-11e9-859a-6725695739c0.png)
+      
+          * Um plus seria construir em ReactJS, mas pode ser feito com HTML e CSS.
   
       3. Utilizar uma API para requisições;
   
