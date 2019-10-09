@@ -2,16 +2,6 @@
 
 Este repositório é utilizado para aplicação de testes em candidatos a vaga de programador.
 
-```
-
-  O teste conta com 3 níveis:
-  
-    -> Básico
-    -> Médio
-    -> Avançado
-
-```
-
 #### Para o teste básico
   
       1. Trazer como resultado das tabelas tabelas o NOME COMPLETO e o NÚMERO DE TELEFONE
@@ -41,19 +31,3 @@ Este repositório é utilizado para aplicação de testes em candidatos a vaga d
           Necessário criar um input com quantidade de usuários que retornará no JSON, fazer uma listagem abaixo e criar uma ação (modal por exemplo) que exibirá outras informações além do nome em uma segunda página de detalhamento. Na ação a criatividade será avaliada.
       
           * Um plus seria construir em ReactJS, mas pode ser feito com HTML e CSS.
-  
-#### Para o teste médio
-
-  ```
-    
-     Em desenvolvimento
-    
-  ```
-  
-#### Para o teste avançado
-
-  ```
-    
-     Em desenvolvimento
-    
-  ```
