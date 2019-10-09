@@ -10,7 +10,7 @@ Este repositório é utilizado para aplicação de testes em candidatos a vaga d
       git push
   ```
 
-#### Para o teste básico
+#### Para o teste
   
       1. Trazer como resultado das tabelas tabelas o NOME COMPLETO e o NÚMERO DE TELEFONE
 
