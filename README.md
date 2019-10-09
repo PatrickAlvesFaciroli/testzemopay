@@ -17,13 +17,6 @@ Este repositório é utilizado para aplicação de testes em candidatos a vaga d
       1. Resolver os problemas dispostos;
       
         1.1 Trazer como resultado das tabelas tabelas o NOME COMPLETO e o NÚMERO DE TELEFONE
-        
-        |id|full_name|age|
-        |--|---------|---|
-        |1|Joice Figueiredo|19|
-        |2|Thor Antunes|45|
-        |3|Eide Batista|32|
-        |4|Rodrigo Dantas|25|
   
       2. Contruir uma página baseado na seguinte tela:
       
@@ -32,6 +25,12 @@ Este repositório é utilizado para aplicação de testes em candidatos a vaga d
       3. Utilizar uma API para requisições;
       
 
+|id|full_name|age|
+|--|---------|---|
+|1|Joice Figueiredo|19|
+|2|Thor Antunes|45|
+|3|Eide Batista|32|
+|4|Rodrigo Dantas|25|
 
 ![Screen Shot 2019-10-09 at 12 56 12 PM](https://user-images.githubusercontent.com/53064911/66498842-21d2ca80-ea95-11e9-859a-6725695739c0.png)
   
