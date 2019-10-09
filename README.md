@@ -15,14 +15,16 @@ Este repositório é utilizado para aplicação de testes em candidatos a vaga d
 #### Para o teste básico
   
       1. Resolver os problemas dispostos;
+      
+        1.1 Fazer um CRUD
   
       2. Contruir uma página baseado na seguinte tela:
-      
-      
       
           * Um plus seria construir em ReactJS, mas pode ser feito com HTML e CSS.
   
       3. Utilizar uma API para requisições;
+      
+
 
 ![Screen Shot 2019-10-09 at 12 56 12 PM](https://user-images.githubusercontent.com/53064911/66498842-21d2ca80-ea95-11e9-859a-6725695739c0.png)
   
