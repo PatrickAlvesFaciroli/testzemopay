@@ -28,6 +28,10 @@ Este repositório é utilizado para aplicação de testes em candidatos a vaga d
 |3|(14) 976540002|
 |4|(12) 976540003|
 
+SELECT nomes.full_name, telefones.number_phone
+FROM nomes, telefones
+WHERE nomes.id = telefones.id_user;
+
       2. Utilizar uma API para requisições;
       
           Enviar a quantidade de usuários que será retornada na requisição.

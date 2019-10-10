@@ -1,0 +1,205 @@
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css">
+    <style>
+
+        .navbar {
+            margin-bottom:100px;
+        }
+        .perfil {
+            position: absolute;
+            left: 50%;
+            margin-left: -60px !important; 
+        }
+        .brand {
+            position: absolute;
+            left: 50%;
+            margin-left: -60px !important; 
+            display: block;
+        }
+        .logo {
+            max-width:100px;
+            max-height:50px;
+        }
+        .nome {
+            margin-left: -65px !important; 
+            max-height:50px;
+        }
+    
+    </style>
+
+    <nav class="navbar">
+        <div class="navbar-brand">
+            <a class="brand" href="https://zemopay.com.br/">
+                <img class="logo" src="logo.jpg" />
+                <br>
+                <h1 class="nome">ZemoPay</h1>
+            </a>
+        </div>
+    </nav>
+
+</head>
+
+<body>
+
+<div class="row justify-content-md-center">
+    <div class="col-lg-2">
+        <input type="text" class="form-control" id="quantidade_pessoas" placeholder="Quantidade de pessoas">
+    </div>
+    <div class="col-lg-2">
+        <button id="pesquisar_botao" type="button" class="btn btn-primary">Pesquisar</button>    
+    </div>
+</div>
+
+<div class="row justify-content-md-center">
+    <div class="col-lg-10">
+        <table id="tabela"></table>
+    </div>
+</div>
+
+<div class="modal fade" id="modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title" id="nome_completo"></h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+            <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="modal-body">
+            <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <img id="perfil" class="perfil" src=""></img>
+                </div>
+            </div><br><br><br><br><br><br>
+            <div class="row">
+                <div class="col-md-6">
+                    Cidade
+                    <h5 id="cidade"></h5>
+                </div>
+                <div class="col-md-6">
+                    Estado
+                    <h5 id="estado"></h5>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    País
+                    <h5 id="pais"></h5>
+                </div>
+                <div class="col-md-6">
+                    Endereço
+                    <h5 id="endereco"></h5>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    Telefone
+                    <h5 id=telefone></h5>
+                </div>
+                <div class="col-md-8">
+                    E-Mail
+                    <h5 id=email></h5>
+                </div>
+            </div>
+                
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+        </div>
+        </div>
+        </div>
+    </div>
+</div>
+
+</body>
+
+<footer>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script type="application/javascript">
+        dados = [];
+        $('#pesquisar_botao').click(function(){
+            let quantidade =  $('#quantidade_pessoas').val();
+            $.ajax({
+                url: 'https://randomuser.me/api/?results='+quantidade,
+                dataType: 'json',
+                success: function(data) {
+                    dados = data.results;
+                    let pessoas = [];
+                    for(i=0;i<quantidade;i++){
+                        pessoa = [];
+                        pessoa.push(i);
+                        pessoa.push(data.results[i].name.first+' '+data.results[i].name.last);
+                        if(data.results[i].gender == 'female'){
+                            pessoa.push('Feminino');
+                        }else{
+                            pessoa.push('Masculino');                            
+                        }
+                        pessoa.push(data.results[i].location.state);
+                        pessoa.push(data.results[i].email);
+                        pessoas.push(pessoa);
+                    }
+                    $(document).ready(function() {
+                        var table = $('#tabela').DataTable( {
+                            "bFilter": false,
+                            "lengthChange": false,
+                            data: pessoas,
+                            columns: [
+                                { title: "ID"},
+                                { title: "Nome" },
+                                { title: "Gênero" },
+                                { title: "Local" },
+                                { title: "E-Mail" },
+                                {
+                                "targets": -1,
+                                "data": null,
+                                "defaultContent": "<button type='button' class='btn btn-light visualizar'>Visualizar</button>",
+                                }
+                            ]
+                        } );
+                    } );
+                }
+            });
+            setTimeout(function(){ 
+                $('.visualizar').click(function(event){
+                    var trElem = $(this).closest("tr");
+                    var firstTd = $(trElem).children("td")[0];
+                    id = $(firstTd).text();
+                    informacoesAdicionais(id);
+                });
+            }, 1000);
+        });
+
+
+
+        function informacoesAdicionais(id){
+            let nome_completo = dados[id].name.title+' '+dados[id].name.first+' '+dados[id].name.last;
+            let nome = dados[id].name.first;
+            let cidade = dados[id].location.city;
+            let estado = dados[id].location.state;
+            let pais = dados[id].location.country;
+            let telefone = dados[id].phone;
+            let email = dados[id].email;
+            let idade = dados[id].dob.age;
+            let endereco = dados[id].location.street.name+', '+dados[id].location.street.number;
+            document.getElementById("nome_completo").innerHTML = nome_completo+', '+idade;
+            document.getElementById("cidade").innerHTML = cidade;
+            document.getElementById("estado").innerHTML = estado;
+            document.getElementById("pais").innerHTML = pais;
+            document.getElementById("telefone").innerHTML = telefone;
+            document.getElementById("email").innerHTML = email;
+            document.getElementById("endereco").innerHTML = endereco;
+            $("#perfil").attr('src', dados[id].picture.large);
+            $('#modal').modal('show');
+        }
+
+
+
+    </script> 
+
+</footer>
