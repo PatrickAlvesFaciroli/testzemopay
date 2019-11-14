@@ -1,4 +1,4 @@
-# Seja bem vindo a Zemopay
+# Seja bem vindo à Zemopay
 
 Este repositório é utilizado para aplicação de testes em candidatos a vaga de programador.
 
