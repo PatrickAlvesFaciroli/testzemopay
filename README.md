@@ -12,7 +12,7 @@ Este repositório é utilizado para aplicação de testes em candidatos a vaga d
 
 #### Para o teste
   
-      1. Trazer como resultado das tabelas o NOME COMPLETO e o NÚMERO DE TELEFONE.
+      1. Montar uma query para trazer como resultado das tabelas o NOME COMPLETO e o NÚMERO DE TELEFONE.
 
 |id|full_name|age|
 |--|---------|---|
